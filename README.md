@@ -133,4 +133,12 @@ https://graphemica.com/
 | ポンド     | U+FFE1 (fullwidth pound sign)  残る | U+00A3 (pound sign) 消える                     |
 | 否定記号   | U+FFE2 (fullwidth not sign)  残る   | U+00AC (not sign) 消える、JIS X 0213に含まれる |
 
+セント記号が文字コードに含まれているかはこちらのサイトで確認できる。これを見てみると、cent signの方はCp943Cには存在しない。存在しない文字の場合は、上記の`-Ddb2.jcc.charsetDecoderEncoder=3`を指定していれば、REPLACEMENT CHARACTERへ変換される訳でもないらしい（絵文字の場合とは異なる挙動）。
+
+U+FFE0
+http://www.fileformat.info/info/unicode/char/ffe0/charset_support.htm
+U+00A2
+http://www.fileformat.info/info/unicode/char/00a2/charset_support.htm
+
+
 円がバックスラッシュになるとかもあるかも
