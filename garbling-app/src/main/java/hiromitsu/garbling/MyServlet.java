@@ -48,7 +48,8 @@ public class MyServlet extends HttpServlet {
     
     request.setAttribute("list", list);
     
-    request.getRequestDispatcher("db-access.jsp").forward(request, response);
+    request.getRequestDispatcher("dbAccess_Shift_JIS.jsp").forward(request, response);
+//    request.getRequestDispatcher("dbAccess_UTF-8.jsp").forward(request, response);
   }
 
   /**
